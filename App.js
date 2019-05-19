@@ -11,12 +11,14 @@ import Rentals from './components/Rentals';
 import NotFound from './components/notFound';
 import MovieForm from './components/movieForm';
 import LoginForm from './components/loginForm';
+import RegisterForm from './components/registerForm';
 
 function App() {
   return (
     <div className="App container">
       <NavBar />
       <Switch>
+        <Route path = "/register" component = { RegisterForm } />
         <Route path = "/login" component = { LoginForm } />
         <Route path = "/movies/:id" component = { MovieForm } />
         <Route path = "/movies" component = { Movies }/>
